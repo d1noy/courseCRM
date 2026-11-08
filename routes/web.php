@@ -19,7 +19,7 @@ Route::middleware('auth')->group(function () {
 
         Route::get('/categories/{category}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
         Route::post('/categories/{category}/edit', [CategoryController::class, 'update'])->name('categories.update');
-        Route::get('/categories/{category}/destory', [CategoryController::class, 'destroy'])->name('categories.destroy');
+        Route::get('/categories/{category}/destroy', [CategoryController::class, 'destroy'])->name('categories.destroy');
 
         Route::get('/categories/{category}/courses', [CourseController::class, 'index'])->name('courses.index');
         Route::get('/categories/{category}/courses/create', [CourseController::class, 'create'])->name('courses.create');
